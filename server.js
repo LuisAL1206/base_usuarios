@@ -31,6 +31,8 @@ app.delete('/delete/user:id',(req,res)=>{
     .catch(error => res.status(409).send({message:'No se ha podido borrar el usuario',error:error}))
 });
 
+
+
 app.post('/create/user', (req, res) => {
     const {
         Nombre,
